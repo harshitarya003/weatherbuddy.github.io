@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.querySelector(".search button");
     //search box
     // default city
-    searchweather("Delhi");
+    searchweather("London");
     async function searchweather(city) {
         const response = await fetch(url + city + `&appid=${apiKey}`);
         if (response.status == 404) document.querySelector(".error").style.display = "block";
