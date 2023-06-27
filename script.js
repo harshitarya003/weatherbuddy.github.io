@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.querySelector(".search button");
     //search box
     // default city
-    searchweather("London");
+    searchweather("Delhi");
     async function searchweather(city) {
         const response = await fetch(url + city + `&appid=${apiKey}`);
         if (response.status == 404) document.querySelector(".error").style.display = "block";
@@ -52,17 +52,17 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".card-1 .pressure").innerHTML = Math.round(data.main.pressure) + " atm";
 
             var day = data.weather[0].main;
-            if (day == "Mist") document.querySelector(".card-1 .1 img").src = "images/mist.png";
-            else if (day == "Clear") document.querySelector(".card-1 .1 img").src = "images/clear.png";
-            else if (day == "Clouds") document.querySelector(".card-1 .1 img").src = "images/clouds.png";
-            else if (day == "Drizzle") document.querySelector(".card-1 .1 img").src = "images/drizzle.png";
-            else if (day == "Humidity") document.querySelector(".card-1 .1 img").src = "images/humidity.png";
-            else if (day == "Rain") document.querySelector(".card-1 .1 img").src = "images/rain.png";
-            else if (day == "Snow") document.querySelector(".card-1 .1 img").src = "images/snow.png";
-            else if (day == "Wind") document.querySelector(".card-1 .1 img").src = "images/wind.png";
+            if (day == "Mist") document.querySelector(".card-1  img").src = "images/mist.png";
+            else if (day == "Clear") document.querySelector(".card-1 img").src = "images/clear.png";
+            else if (day == "Clouds") document.querySelector(".card-1 img").src = "images/clouds.png";
+            else if (day == "Drizzle") document.querySelector(".card-1  img").src = "images/drizzle.png";
+            else if (day == "Humidity") document.querySelector(".card-1  img").src = "images/humidity.png";
+            else if (day == "Rain") document.querySelector(".card-1 img").src = "images/rain.png";
+            else if (day == "Snow") document.querySelector(".card-1 img").src = "images/snow.png";
+            else if (day == "Wind") document.querySelector(".card-1 img").src = "images/wind.png";
         }
     }
-    card_1("London");
+    card_1("Delhi");
 
     //card-2
     async function card_2(city) {
