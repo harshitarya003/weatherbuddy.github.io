@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (day == "Wind") document.querySelector(".card-1 img").src = "images/wind.png";
         }
     }
-    card_1("Delhi");
+    card_1("Paris");
 
     //card-2
     async function card_2(city) {
