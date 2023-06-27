@@ -48,8 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".card-1 .humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".card-1 .temp").innerHTML = Math.round(data.main.temp) + "°C";
             document.querySelector(".card-1 .wind").innerHTML = Math.round(data.wind.speed) + " km/h";
-            document.querySelector(".card-1 .feelslike h2").innerHTML = Math.round(data.main.feels_like) + "°C";
-            document.querySelector(".card-1 .pressure").innerHTML = Math.round(data.main.pressure) + " atm";
 
             var day = data.weather[0].main;
             if (day == "Mist") document.querySelector(".card-1  img").src = "images/mist.png";
@@ -76,8 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".card-2 .humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".card-2 .temp").innerHTML = Math.round(data.main.temp) + "°C";
             document.querySelector(".card-2 .wind").innerHTML = Math.round(data.wind.speed) + " km/h";
-            document.querySelector(".card-2 .feelslike h2").innerHTML = Math.round(data.main.feels_like) + "°C";
-            document.querySelector(".card-2 .pressure").innerHTML = Math.round(data.main.pressure) + " atm";
 
             var day = data.weather[0].main;
             if (day == "Mist") document.querySelector(".weather-icon-2").src = "images/mist.png";
@@ -104,8 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".card-3 .humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".card-3 .temp").innerHTML = Math.round(data.main.temp) + "°C";
             document.querySelector(".card-3 .wind").innerHTML = Math.round(data.wind.speed) + " km/h";
-            document.querySelector(".card-3 .feelslike h2").innerHTML = Math.round(data.main.feels_like) + "°C";
-            document.querySelector(".card-3 .pressure").innerHTML = Math.round(data.main.pressure) + " atm";
 
             var day = data.weather[0].main;
             if (day == "Mist") document.querySelector(".weather-icon-3").src = "images/mist.png";
